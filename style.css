@@ -268,6 +268,7 @@ section {
     flex: 100%;
   }
 }
+
 @media (max-width: 580px) {
   .max-width {
     padding: 0 20px;
@@ -291,7 +292,7 @@ section {
     font-size: 20px;
   }
   .home .home-content .text-2 {
-    font-size: 45px;
+    font-size: 35px;
   }
   .home .home-content .text-3 {
     font-size: 25px;

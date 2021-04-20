@@ -111,6 +111,19 @@
 }
 
 /* all similiar styling code*/
+.about,
+.services,
+.achiev {
+  font-family: "Poppins", sans-serif;
+}
+.about .about-content,
+.services .services-content,
+.achiev .achiev-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
 section {
   padding: 100px 0;
 }
@@ -145,20 +158,9 @@ section .title::after {
 }
 
 /* about section styling */
-.about,
-.services {
-  font-family: "Poppins", sans-serif;
-}
 
 .about .title::after {
   content: "who i am";
-}
-.about .about-content,
-.services .services-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
 }
 .about .about-content .left {
   width: 45%;
@@ -245,6 +247,49 @@ section .title::after {
   margin: 10px 0 7px 0;
 }
 
+/* achiev section styling */
+
+.achiev .title::before {
+  width: 245px;
+}
+.achiev .title::after {
+  content: "what i achieve";
+}
+.achiev .achiev-content .column {
+  width: calc(50% - 30px);
+}
+.achiev .achiev-content .card {
+  width: calc(33% - 20px);
+  background: rgb(216, 212, 212);
+  text-align: center;
+  border-radius: 7px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.achiev .achiev-content .card:hover {
+  background: rgb(220, 133, 20);
+}
+.achiev .achiev-content .card .box {
+  transition: all 0.3s ease;
+}
+.achiev .achiev-content .card:hover .box {
+  transform: scale(1.05);
+  color: #fff;
+}
+.achiev .achiev-content .card i {
+  font-size: 50px;
+  transition: all 0.3s ease;
+}
+.achiev .achiev-content .card:hover i {
+  color: #fff;
+}
+.achiev .achiev-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
 /* responsive media query start  */
 @media (max-width: 1300) {
   .home .max-width {
@@ -319,7 +364,8 @@ section .title::after {
   .about .about-content .right {
     flex: 100%;
   }
-  .services .services-content .card {
+  .services .services-content .card,
+  .achiev .achiev-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
@@ -338,7 +384,8 @@ section .title::after {
   .home .home-content .text-3 {
     font-size: 32px;
   }
-  .services .services-content .card {
+  .services .services-content .card,
+  .achiev .achiev-content .card {
     width: 100%;
   }
 }

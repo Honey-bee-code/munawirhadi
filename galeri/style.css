@@ -22,14 +22,20 @@
   font-family: "Ubuntu", sans-serif;
   text-align: center;
 }
-.galeri-content .text {
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.galeri-content .text,
+.galeri-content .text2 {
     padding-top: 2rem;
     margin: 0px 0 20px 0;
 }
-.galeri-content .text a {
+.galeri-content .text a,
+.galeri-content .text2 a {
     font-size: 35px;
     font-weight: 500;
-    color: #fff;
+    color: rgb(220, 133, 20);
 }
 .galeri .carousel .card {
   background: rgba(0, 0, 0, 0.5);
@@ -49,7 +55,7 @@
 .galeri .carousel .card img {
   width: 250px;
   object-fit: cover;
-  border: 5px solid rgb(220, 133, 20);
+  border: 2px solid rgb(220, 133, 20);
 }
 .owl-dots {
     text-align: center;
@@ -86,4 +92,9 @@
   .navbar .logo1 a {
     font-size: 25px;
   }
+ 
+.galeri-content .text a,
+.galeri-content .text2 a {
+    font-size: 25px;
+}
 }

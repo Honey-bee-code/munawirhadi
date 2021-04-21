@@ -115,7 +115,8 @@
 .services,
 .achiev,
 .teams,
-.contact {
+.contact,
+footer {
   font-family: "Poppins", sans-serif;
 }
 .about .about-content,
@@ -452,6 +453,21 @@ section .title::after {
   background: none;
 }
 
+/* footer section styling */
+footer {
+  font-size: 20px;
+  text-align: center;
+  background: #111;
+  padding: 20px 23px;
+  color: #fff;
+}
+footer span a {
+  color: rgb(220, 133, 20);
+}
+footer span a:hover {
+  text-decoration: underline;
+}
+
 /* responsive media query start  */
 @media (max-width: 1300) {
   .home .max-width {
@@ -555,6 +571,9 @@ section .title::after {
   .contact .right form .fields {
     display: inline;
   }
+  footer {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -578,5 +597,8 @@ section .title::after {
   .home .home-content a {
     font-size: 12px;
     padding: 5px 13px;
+  }
+  footer {
+    font-size: 10px;
   }
 }

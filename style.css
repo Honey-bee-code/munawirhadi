@@ -336,7 +336,27 @@ section .title::after {
 .teams .carousel .card:hover img {
     border-color: #fff;
 }
-
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid rgb(220, 133, 20) !important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover {
+    background: rgb(220, 133, 20) !important;
+}
 
 
 
@@ -443,6 +463,11 @@ section .title::after {
 @media (max-width: 400px) {
   .max-width {
     padding: 0 20px;
+  }
+  .navbar .logo a {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
   }
   .home .home-content .text-1 {
     font-size: 15px;

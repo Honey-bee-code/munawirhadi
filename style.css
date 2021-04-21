@@ -154,7 +154,7 @@ footer {
 .contact .contact-content {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: top;
   justify-content: space-between;
 }
 section {

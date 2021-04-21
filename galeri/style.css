@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 30px 0;
+  /* background: rgb(220, 133, 20); */
+  font-family: "Ubuntu", sans-serif;
+}
+.navbar .logo1 a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.navbar .logo1 a span {
+  color: rgb(220, 133, 20);
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* galeri section styling */
+.galeri {
+  display: flex;
+  background: url(../img/munawir.jpg) no-repeat center;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+.galeri .title {
+  margin: 80px 0 20px 0;
+}
+.galeri .carousel .card {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 7px;
+  padding: 25px 35px;
+}
+.galeri .carousel .card .box {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.galeri .carousel .card img {
+  width: 250px;
+  border: 5px solid rgb(220, 133, 20);
+}
+
+/* responsive  */
+@media (max-width: 900px) {
+  .max-width {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 400px) {
+  .max-width {
+    padding: 0 20px;
+  }
+  .navbar .logo1 a {
+    font-size: 25px;
+  }
+}

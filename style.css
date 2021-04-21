@@ -344,10 +344,11 @@ section .title::after {
   background: rgb(220, 133, 20);
 }
 .teams .carousel .card .box {
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
   transition: all 0.3s ease;
 }
 .teams .carousel .card:hover .box {

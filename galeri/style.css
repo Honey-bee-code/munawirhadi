@@ -36,6 +36,11 @@
     font-size: 35px;
     font-weight: 500;
     color: rgb(220, 133, 20);
+    transition: all 0.3s ease;
+}
+.galeri-content .text a:hover,
+.galeri-content .text2 a:hover {
+    color: #fff;
 }
 .galeri .carousel .card {
   background: rgba(0, 0, 0, 0.5);

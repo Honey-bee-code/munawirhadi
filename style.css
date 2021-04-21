@@ -113,7 +113,8 @@
 /* all similiar styling code*/
 .about,
 .services,
-.achiev {
+.achiev,
+.teams {
   font-family: "Poppins", sans-serif;
 }
 .about .about-content,
@@ -203,15 +204,17 @@ section .title::after {
 }
 
 /* services section styling */
-.services {
+.services, .teams {
   color: #fff;
   background: #111;
 }
-.services .title::before {
+.services .title::before,
+.teams .title::before {
   background: #fff;
   width: 220px;
 }
-.services .title::after {
+.services .title::after,
+.teams .title::after {
   background: #111;
   content: "what i provide";
 }
@@ -289,6 +292,53 @@ section .title::after {
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
+
+/* teams section styling */
+.teams .title::before {
+  width: 190px;
+}
+.teams .title::after {
+  content: "who with me";
+}
+.teams .carousel .card {
+    background: #222;
+    border-radius: 7px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover {
+    background: rgb(220, 133, 20);
+}
+.teams .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+.teams .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.teams .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(220, 133, 20);
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover img {
+    border-color: #fff;
+}
+
+
+
 
 /* responsive media query start  */
 @media (max-width: 1300) {

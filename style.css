@@ -5,6 +5,9 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
@@ -66,6 +69,31 @@
   display: none;
 }
 
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: rgb(220, 133, 20);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 7px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
 /* home section styling */
 .home {
   display: flex;
@@ -92,6 +120,7 @@
 }
 .home .home-content .text-3 span {
   color: rgb(220, 133, 20);
+  text-shadow: 0px 0px 5px #111;
   font-weight: 500;
 }
 .home .home-content a {
@@ -564,6 +593,9 @@ footer span a:hover {
   .home .home-content .text-3 {
     font-size: 32px;
   }
+  .about .about-content .right .text {
+    font-size: 20px;
+  }
   .services .services-content .card,
   .achiev .achiev-content .card {
     width: 100%;
@@ -597,6 +629,15 @@ footer span a:hover {
   .home .home-content a {
     font-size: 12px;
     padding: 5px 13px;
+  }
+  .about .about-content .right .text {
+    font-size: 15px;
+  }
+  .about .about-content .right p {
+      font-size: 11px;
+  }
+  .about .about-content .right a {
+      font-size: 11px;
   }
   footer {
     font-size: 10px;
